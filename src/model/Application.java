@@ -4,8 +4,12 @@ public class Application {
 
     public static void main(String[] args){
 
-        CardReader cr = new CardReader();
-        cr.startTransaction(new RegisteredUserCard());
+        CardReaderProxy crProxy = new CardReaderProxy();
+        crProxy.startTransaction(new RegisteredUserCard());
+        crProxy.startTransaction(new RegisteredUserCard());
+        crProxy.startTransaction(new RegisteredUserCard());
+        crProxy.startTransaction(new RegisteredUserCard());
+        crProxy.startTransaction(new RegisteredUserCard());
 
     }
 
